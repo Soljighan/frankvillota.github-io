@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: Verdana, Tahoma, sans-serif
 }
 
 body {
   color: #ededed;
   background: #081b29;
-  min-height: 200vh;
-  padding-bottom: 500px;
 }
 
 .header {
@@ -65,7 +64,6 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-
   background-image: url('Resume.img/bgrsm.jpg');
   background-size: cover;
   background-position: center;
@@ -207,31 +205,28 @@ body {
   font-size: 20px;
   line-height: 1.4;
   margin: 4rem;
-
 }
 
 .contact-container {
-  margin-top: 90px; /* Adjust the margin-top value to create space between Skills and Contacts */
+  margin-top: 90px;
 }
 
 .sub-title {
   text-align: center;
-  font-size: 40px; /* Adjust the font size as needed */
-  padding-bottom: 20px; /* Add padding to create space */
-  margin-top: 450px; /* Add margin-top to separate the subtitle from the content */
+  font-size: 40px;
+  padding-bottom: 20px;
+  margin-top: 170px;
 }
 
 .sub-title span {
   color: #0ef;
 }
 
-
-
 .educlist{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .educlist div{
@@ -303,81 +298,55 @@ body {
   margin-bottom: 50px;
 }
 
-.bars{
+.bar{
   font-size: 23px;
 }
 
-.tecbars .bars{
+.Allbars .bar{
   margin-top: 40px 0px;
 }
 
-.tecbars .bars:first-child{
+.Allbars .bar:first-child{
   margin-top: 0;
 }
 
-.tecbars .bars:last-child{
+.Allbars .bar:last-child{
   margin-bottom: 0;
 }
 
-.tecbars .bars .minfo{
+.Allbars .bar .info{
   margin-bottom: 5px;
 }
 
-.tecbars .bars .minfo span{
+.Allbars .bar .info span{
   font-size: 17px;
   font-weight: 500;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
 
-.tecbars .bars .prog{
+.Allbars .bar .progress{
   position: relative;
   border-radius: 10px;
   width:100%;
   height: 5px;
   background-color: #00000024;
-  animation: animate 1s cubic-bezier(1,0,0,5,1)forwards;
   transition: translateX(0);
   transform-origin: left;
-}
-
-@keyframes animate {
-  100%{
-    transform: translateX(1);
-  }
-
-}
-.tecbars .bars .prog span{
-  height: 100%;
-  background-color: rgb(202, 217, 219);
-  position: absolute;
-  border-radius: 10px;
-  animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-.prog .progcad span{
-  width: 90%;
 }
 
 /*for contact*/
 #Contacts {
     text-align: center;
     padding: 50px 0;
+    
 }
-
-
 
 .sub-title {
     color: #333;
     font-size: 24px;
     margin-bottom: 15px;
-}
-
-
-
-.contact-info {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .contact-info div {
@@ -390,9 +359,21 @@ body {
     }
 }
 
+#Experience{
+    text-align: center;
+    padding: 50px 0;
+}
 
+.sub{
+    color: #333;
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
 
-
+.sub span{
+  color: #0ef;
+}
 
 
 

@@ -8,9 +8,3 @@ var typed= new Typed(".text",{
     loop: true
 })
 
-<script>
-  document.getElementById('navigationButton').addEventListener('click', function() {
-    // Code to navigate to the designated area
-    document.getElementById('designatedArea').scrollIntoView();
-  });
-</script>
